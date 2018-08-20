@@ -59,7 +59,7 @@
                     <strong><%= product.name %></strong>
                 </div>
                 <div class="sq-flex sq-card-body sq-flexbox-row sq-align-center sq-justify-center">
-                    <img src="/images/user.png" alt="" class="sq-landing-card" style="cursor: pointer;">
+                    <img src="/images/user.png" alt="" class="sq-landing-card">
                 </div>
                 <div class="sq-card-footer sq-text-center">
                     <%= product.price %>
@@ -68,21 +68,19 @@
                     <!-- Modal start -->
                     <button onclick="openModal('<%= product.id %>')">Info</button>
                      <div id="<%= product.id %>" class="sq-modal">
-                        <div class="sq-modal-content" style="width: 30%; height: 35%;">     
+                        <div class="sq-modal-content" style="width: 30%; height: 30%;">     
                             <button  onclick="closeModal('<%= product.id %>')" class="sq-close">&times;</button>
-                            <div class="sq-flex sq-justify-center sq-success-highlight">
+                            <div class="sq-flex sq-justify-center" style="background-color: var(--secondary-accent)">
                                 <h2 class="sq-text-center"> <%= product.name %> </h2>
                             </div>    
-                            <div class="sq-flex sq-justify-center" style="background-color: #9ecf99;">   
+                            <div class="sq-flex sq-justify-center" style="background-color: var(--secondary-accent)">   
                                 <img src="/images/user.png" alt="" class="sq-justify-center sq-air-r-10">
                             </div>
-                            <div class="sq-flex sq-justify-center sq-success-highlight">
+                            <div class="sq-flex sq-justify-center " style="background-color: var(--secondary-accent)">
                                 <p class="sq-text-center"> <%= product.details %></p>
                             </div>    
-                            <div class="sq-success-highlight" style="max-height: 2rem;"> 
-     
+                            <div style="max-height: 2rem; background-color: var(--secondary-accent)">     
                                 <a href="/shoppingcart"><button style="margin-left: 39.8em;">Buy</button></a>
-
                             </div>
                         </div>
                     </div>
